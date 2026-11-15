@@ -233,7 +233,7 @@ Realistic details hidden in the data:
 teaching problems: `refund_spike`, `product_mix_shift`, `missing_cogs`,
 `duplicate_records`, `misaligned_periods`, `attribution_gap` and
 `ad_spend_no_lift`. `profit_decline` and `advertising` use the base data.
-Each scenario gets its own database file in `warehouse/`.
+Scenarios with override files get their own database file in `warehouse/`.
 
 ## Understanding the database
 
@@ -372,7 +372,7 @@ python run.py init-db --source live     # after filling the live settings in .en
 ## Testing and reliability
 
 ```bash
-pytest                         # 144 unit tests, no API key needed
+pytest                         # 145 unit tests, no API key needed
 python run.py eval             # 13 deterministic evaluations (one per category)
 python run.py eval --agent     # + 11 model-backed scenario evals (needs OPENAI_API_KEY)
 python run.py eval --case sql --verbose
