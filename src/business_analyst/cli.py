@@ -338,7 +338,7 @@ def build_parser() -> argparse.ArgumentParser:
     p.add_argument("--case", help="Run only cases whose id contains this text")
     p.add_argument("--verbose", action="store_true")
 
-    sub.add_parser("build-skill", help="Build dist/business-analyst-skill.zip")
+    sub.add_parser("build-skill", help="Build claude-skill/business-analyst-skill.zip")
 
     p = sub.add_parser("tool", help="Run one analytical tool directly (offline). `tool list` lists them")
     p.add_argument("name")

@@ -96,3 +96,12 @@ def test_cli_tool_runs_offline(tmp_path):
     r = run_cli("tool", "get_contribution_profit", "--args", '{"start_date":"2026-11-02","end_date":"2026-11-08"}',
                 env_extra={"NORTHSTAR_WAREHOUSE_DIR": str(tmp_path)})
     assert r.returncode == 0 and '"contribution_profit": 18600.0' in r.stdout
+
+
+def test_committed_skill_zip_is_up_to_date(settings, base_db, tmp_path):
+    """The ZIP in claude-skill/ is published as a download link; it must match the Skill folder.
+    If this fails, run `python run.py build-skill` and commit the new ZIP."""
+    committed = ROOT / "claude-skill/business-analyst-skill.zip"
+    assert committed.exists(), "claude-skill/business-analyst-skill.zip is missing; run `python run.py build-skill`"
+    fresh = build_skill(settings, out_dir=tmp_path)
+    assert fresh.read_bytes() == committed.read_bytes(), "Skill ZIP is stale: run `python run.py build-skill`"

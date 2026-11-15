@@ -10,7 +10,8 @@ access, API connections or integrations by itself.
 ## Install
 
 1. Get `business-analyst-skill.zip` (build it from the companion repository
-   with `python run.py build-skill`; it is written to `dist/`).
+   with `python run.py build-skill`; it is written to `claude-skill/business-analyst-skill.zip`
+   and a ready-made copy is committed to the repository).
 2. **Claude apps (claude.ai / desktop):** open Settings → Capabilities (the
    exact menu name can change), make sure code execution / file creation is
    enabled, then upload the ZIP under Skills. Enable the Skill.

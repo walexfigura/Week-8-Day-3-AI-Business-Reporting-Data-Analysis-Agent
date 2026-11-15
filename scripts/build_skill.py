@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build dist/business-analyst-skill.zip (same as `python run.py build-skill`).
+"""Build claude-skill/business-analyst-skill.zip (same as `python run.py build-skill`).
 
 Validates SKILL.md front matter, refreshes the Skill's sample data from the
 DuckDB database, syncs shared knowledge files into references/, verifies the

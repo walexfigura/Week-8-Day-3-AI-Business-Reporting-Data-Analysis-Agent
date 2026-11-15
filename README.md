@@ -106,7 +106,9 @@ Week-8-Day-3-AI-Business-Reporting-Data-Analysis-Agent/
 │   └── cli.py, config.py, database.py, ...
 ├── evals/                   # test-cases.json, run_evals.py
 ├── tests/                   # pytest suite (no API key needed)
-├── claude-skill/business-analyst/   # the Claude Skill (SKILL.md, references, sample data, script)
+├── claude-skill/
+│   ├── business-analyst/              # the Claude Skill (SKILL.md, references, sample data, script)
+│   └── business-analyst-skill.zip     # ready-to-install Skill package (committed)
 ├── scripts/                 # generate_data.py, build_skill.py
 ├── docs/                    # architecture, SQL tutorial, real data, production, troubleshooting
 └── reports/                 # generated reports land here (git-ignored)
@@ -203,7 +205,7 @@ Reports are saved in `reports/<report-name>/`:
 | `python run.py analyze --question "..." [--scenario NAME]` | **yes** | Ask your own question |
 | `python run.py report [--scenario NAME] [--no-agent]` | optional | Weekly business review. Adds an AI narrative if a key is set; `--no-agent` makes it facts-only |
 | `python run.py eval [--agent] [--case TEXT] [--verbose]` | only with `--agent` | Run evaluations |
-| `python run.py build-skill` | no | Build `dist/business-analyst-skill.zip` |
+| `python run.py build-skill` | no | Rebuild `claude-skill/business-analyst-skill.zip` |
 | `python run.py tool list` / `tool NAME --args '{...}'` | no | Run any agent tool yourself |
 | `python run.py sql "SELECT ..."` | no | Read-only SQL with the same guardrails as the agent |
 
@@ -344,7 +346,7 @@ from guessed numbers.
 
 ## Using the Claude Skill
 
-1. **Build the ZIP:** `python run.py build-skill` creates `dist/business-analyst-skill.zip`. The builder validates the YAML front matter, refreshes the Skill's sample data from DuckDB, syncs the metric definitions, and checks that the bundled script reproduces +20% / +80% / −38%.
+1. **Get the ZIP:** a ready-to-install copy is committed at [`claude-skill/business-analyst-skill.zip`](claude-skill/business-analyst-skill.zip) — download it directly from GitHub. If you change the Skill, rebuild it with `python run.py build-skill`. The builder validates the YAML front matter, refreshes the Skill's sample data from DuckDB, syncs the metric definitions, and checks that the bundled script reproduces +20% / +80% / −38%.
 2. **Install it:**
    - *Claude apps:* enable code execution in Settings → Capabilities, then upload the ZIP under Skills. Menu names may change; see Anthropic's Agent Skills docs.
    - *Claude Code:* unzip into `~/.claude/skills/` or a project's `.claude/skills/`.

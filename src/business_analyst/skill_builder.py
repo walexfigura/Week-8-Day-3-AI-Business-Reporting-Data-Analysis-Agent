@@ -1,4 +1,4 @@
-"""Build the Claude Skill package: dist/business-analyst-skill.zip.
+"""Build the Claude Skill package: claude-skill/business-analyst-skill.zip.
 
 Steps:
 1. Validate SKILL.md front matter (name/description rules from the Agent Skills spec).
@@ -9,6 +9,10 @@ Steps:
    reporting rules) into references/ so there is one source of truth.
 4. Verify the bundled KPI script reproduces the scenario totals.
 5. Zip everything under a single top-level `business-analyst/` folder.
+
+The ZIP is committed to the repository so it can be downloaded directly. It is
+built reproducibly (sorted entries, fixed timestamps and permissions), so
+rebuilding produces an identical file unless the Skill content changed.
 """
 
 from __future__ import annotations
@@ -152,13 +156,18 @@ def build_skill(settings: Settings, out_dir: Path | None = None) -> Path:
     for ref in re.findall(r"`((?:references|assets|scripts)/[^`]+)`", skill_text):
         if not (skill_dir / ref).exists():
             raise SkillValidationError(f"SKILL.md references {ref}, which does not exist")
-    out_dir = out_dir or (settings.project_root / "dist")
+    out_dir = out_dir or (settings.project_root / "claude-skill")
     out_dir.mkdir(parents=True, exist_ok=True)
     zip_path = out_dir / f"{SKILL_NAME}-skill.zip"
     with zipfile.ZipFile(zip_path, "w", zipfile.ZIP_DEFLATED) as zf:
         for path in sorted(skill_dir.rglob("*")):
             if path.is_file() and "__pycache__" not in path.parts and path.name != ".DS_Store":
-                zf.write(path, Path(SKILL_NAME) / path.relative_to(skill_dir))
+                # Fixed timestamp and permissions -> identical bytes on every rebuild.
+                info = zipfile.ZipInfo((Path(SKILL_NAME) / path.relative_to(skill_dir)).as_posix(),
+                                       date_time=(2026, 1, 1, 0, 0, 0))
+                info.compress_type = zipfile.ZIP_DEFLATED
+                info.external_attr = 0o644 << 16
+                zf.writestr(info, path.read_bytes())
     with zipfile.ZipFile(zip_path) as zf:
         names = zf.namelist()
         if zf.testzip() is not None or f"{SKILL_NAME}/SKILL.md" not in names:
