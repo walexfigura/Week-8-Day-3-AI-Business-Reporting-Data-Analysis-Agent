@@ -1,0 +1,22 @@
+{
+  "name": "advertising",
+  "title": "Campaign performance review",
+  "question": "Which Meta campaigns drove last week's increase in advertising spend, and how did platform-reported results compare with Shopify sales?",
+  "description": "Base dataset; focuses on campaign-level spend changes and attribution caveats.",
+  "expected": {
+    "top_campaign_increase": "120210000000103",
+    "ad_spend_change": 16000.0
+  },
+  "periods": {
+    "current": {
+      "start": "2026-11-02",
+      "end": "2026-11-08"
+    },
+    "previous": {
+      "start": "2026-10-26",
+      "end": "2026-11-01"
+    }
+  },
+  "overrides": [],
+  "fictional": true
+}

@@ -1,0 +1,24 @@
+{
+  "name": "misaligned_periods",
+  "title": "Misaligned reporting periods",
+  "question": "Compare ad spend and contribution profit for Nov 2-8 with the previous 10 days (Oct 23 - Nov 1).",
+  "description": "Meta export ends Nov 6, and the requested comparison periods have different lengths.",
+  "expected": {
+    "periods_unequal": true,
+    "ad_data_incomplete": true
+  },
+  "periods": {
+    "current": {
+      "start": "2026-11-02",
+      "end": "2026-11-08"
+    },
+    "previous": {
+      "start": "2026-10-26",
+      "end": "2026-11-01"
+    }
+  },
+  "overrides": [
+    "meta/campaign-performance.csv"
+  ],
+  "fictional": true
+}

@@ -1,0 +1,24 @@
+{
+  "name": "refund_spike",
+  "title": "Refunds jump in the current week",
+  "question": "Net sales growth looks weaker than expected last week. Did refunds change, and where?",
+  "description": "Extra current-week refunds concentrated in the Commuter tumbler with reason 'Lid leaking'.",
+  "expected": {
+    "refund_rate_increases": true,
+    "top_refund_sku": "NS-TUM-30"
+  },
+  "periods": {
+    "current": {
+      "start": "2026-11-02",
+      "end": "2026-11-08"
+    },
+    "previous": {
+      "start": "2026-10-26",
+      "end": "2026-11-01"
+    }
+  },
+  "overrides": [
+    "shopify/refunds.csv"
+  ],
+  "fictional": true
+}

@@ -1,0 +1,25 @@
+{
+  "name": "product_mix_shift",
+  "title": "Product mix shifts toward lower-margin items",
+  "question": "Our COGS grew faster than sales last week. Why?",
+  "description": "40% of current-week bottle lines replaced by Kids Cups and Hiking Kits.",
+  "expected": {
+    "cogs_pct_increases": true
+  },
+  "periods": {
+    "current": {
+      "start": "2026-11-02",
+      "end": "2026-11-08"
+    },
+    "previous": {
+      "start": "2026-10-26",
+      "end": "2026-11-01"
+    }
+  },
+  "overrides": [
+    "google-sheets/fulfillment-costs.csv",
+    "shopify/order-items.csv",
+    "shopify/orders.csv"
+  ],
+  "fictional": true
+}

@@ -1,0 +1,26 @@
+{
+  "name": "ad_spend_no_lift",
+  "title": "Ad spend rises, sales do not",
+  "question": "We increased ad spend a lot last week. Did sales follow?",
+  "description": "17% of current-week orders removed: Meta spend still +80%, net sales roughly flat.",
+  "expected": {
+    "ad_spend_change_pct": 80.0,
+    "net_sales_change_pct_below": 5.0
+  },
+  "periods": {
+    "current": {
+      "start": "2026-11-02",
+      "end": "2026-11-08"
+    },
+    "previous": {
+      "start": "2026-10-26",
+      "end": "2026-11-01"
+    }
+  },
+  "overrides": [
+    "google-sheets/fulfillment-costs.csv",
+    "shopify/order-items.csv",
+    "shopify/orders.csv"
+  ],
+  "fictional": true
+}

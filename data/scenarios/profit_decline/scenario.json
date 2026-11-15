@@ -1,0 +1,25 @@
+{
+  "name": "profit_decline",
+  "title": "Sales up 20%, contribution profit down 38%",
+  "question": "Our sales increased 20% last week, but contribution profit declined 38%. Why?",
+  "description": "The main teaching scenario. Uses the base dataset with no overrides.",
+  "expected": {
+    "net_sales_change_pct": 20.0,
+    "ad_spend_change_pct": 80.0,
+    "contribution_profit_change_pct": -38.0,
+    "top_cost_driver": "meta_ad_spend",
+    "top_campaign_increase": "120210000000103"
+  },
+  "periods": {
+    "current": {
+      "start": "2026-11-02",
+      "end": "2026-11-08"
+    },
+    "previous": {
+      "start": "2026-10-26",
+      "end": "2026-11-01"
+    }
+  },
+  "overrides": [],
+  "fictional": true
+}

@@ -1,0 +1,57 @@
+Date,Cost Category,Amount (USD),Orders Covered,Source,Notes
+10/26/2026,pick_pack,$454.65,171,3PL invoice,3PL rate card v1: $2.10/order + $0.35 per additional unit
+10/26/2026,packaging,$76.95,171,3PL invoice,Standard mailer $0.45/order
+10/26/2026,shipping_labels,$304.11,171,Carrier invoice,"Carrier invoice, blended across zones"
+10/26/2026,payment_processing,$491.36,171,Shopify Payments payouts,Shopify Payments payout report: 2.9% + $0.30 per charge
+10/27/2026,pick_pack,$472.85,178,3PL invoice,3PL rate card v1: $2.10/order + $0.35 per additional unit
+10/27/2026,packaging,$80.10,178,3PL invoice,Standard mailer $0.45/order
+10/27/2026,shipping_labels,$316.56,178,Carrier invoice,"Carrier invoice, blended across zones"
+10/27/2026,payment_processing,$508.14,178,Shopify Payments payouts,Shopify Payments payout report: 2.9% + $0.30 per charge
+10/28/2026,pick_pack,$493.15,186,3PL invoice,3PL rate card v1: $2.10/order + $0.35 per additional unit
+10/28/2026,packaging,$83.70,186,3PL invoice,Standard mailer $0.45/order
+10/28/2026,shipping_labels,$330.79,186,Carrier invoice,"Carrier invoice, blended across zones"
+10/28/2026,payment_processing,$519.58,186,Shopify Payments payouts,Shopify Payments payout report: 2.9% + $0.30 per charge
+10/29/2026,pick_pack,$487.55,186,3PL invoice,3PL rate card v1: $2.10/order + $0.35 per additional unit
+10/29/2026,packaging,$83.70,186,3PL invoice,Standard mailer $0.45/order
+10/29/2026,shipping_labels,$330.79,186,Carrier invoice,"Carrier invoice, blended across zones"
+10/29/2026,payment_processing,$493.01,186,Shopify Payments payouts,Shopify Payments payout report: 2.9% + $0.30 per charge
+10/30/2026,pick_pack,$527.80,201,3PL invoice,3PL rate card v1: $2.10/order + $0.35 per additional unit
+10/30/2026,packaging,$90.45,201,3PL invoice,Standard mailer $0.45/order
+10/30/2026,shipping_labels,$357.47,201,Carrier invoice,"Carrier invoice, blended across zones"
+10/30/2026,payment_processing,$542.09,201,Shopify Payments payouts,Shopify Payments payout report: 2.9% + $0.30 per charge
+10/31/2026,pick_pack,$526.75,197,3PL invoice,3PL rate card v1: $2.10/order + $0.35 per additional unit
+10/31/2026,packaging,$88.65,197,3PL invoice,Standard mailer $0.45/order
+10/31/2026,shipping_labels,$350.35,197,Carrier invoice,"Carrier invoice, blended across zones"
+10/31/2026,payment_processing,$568.94,197,Shopify Payments payouts,Shopify Payments payout report: 2.9% + $0.30 per charge
+11/1/2026,pick_pack,$483.00,181,3PL invoice,3PL rate card v1: $2.10/order + $0.35 per additional unit
+11/1/2026,packaging,$81.45,181,3PL invoice,Standard mailer $0.45/order
+11/1/2026,shipping_labels,$321.94,181,Carrier invoice,"Carrier invoice, blended across zones"
+11/1/2026,payment_processing,$534.12,181,Shopify Payments payouts,Shopify Payments payout report: 2.9% + $0.30 per charge
+11/2/2026,pick_pack,$531.15,158,3PL invoice,3PL rate card v2 (effective 2026-11-02): $2.85/order + $0.35 per additional unit
+11/2/2026,packaging,$86.90,158,3PL invoice,Gift-ready mailer $0.55/order (effective 2026-11-02)
+11/2/2026,shipping_labels,$677.69,158,Carrier invoice,"Carrier invoice, blended across zones; includes peak-season surcharge"
+11/2/2026,payment_processing,$443.97,158,Shopify Payments payouts,Shopify Payments payout report: 2.9% + $0.30 per charge
+11/3/2026,pick_pack,$584.95,170,3PL invoice,3PL rate card v2 (effective 2026-11-02): $2.85/order + $0.35 per additional unit
+11/3/2026,packaging,$93.50,170,3PL invoice,Gift-ready mailer $0.55/order (effective 2026-11-02)
+11/3/2026,shipping_labels,$729.16,170,Carrier invoice,"Carrier invoice, blended across zones; includes peak-season surcharge"
+11/3/2026,payment_processing,$494.53,170,Shopify Payments payouts,Shopify Payments payout report: 2.9% + $0.30 per charge
+11/4/2026,pick_pack,$595.05,176,3PL invoice,3PL rate card v2 (effective 2026-11-02): $2.85/order + $0.35 per additional unit
+11/4/2026,packaging,$96.80,176,3PL invoice,Gift-ready mailer $0.55/order (effective 2026-11-02)
+11/4/2026,shipping_labels,$754.89,176,Carrier invoice,"Carrier invoice, blended across zones; includes peak-season surcharge"
+11/4/2026,payment_processing,$496.91,176,Shopify Payments payouts,Shopify Payments payout report: 2.9% + $0.30 per charge
+11/5/2026,pick_pack,$638.55,192,3PL invoice,3PL rate card v2 (effective 2026-11-02): $2.85/order + $0.35 per additional unit
+11/5/2026,packaging,$105.60,192,3PL invoice,Gift-ready mailer $0.55/order (effective 2026-11-02)
+11/5/2026,shipping_labels,$823.52,192,Carrier invoice,"Carrier invoice, blended across zones; includes peak-season surcharge"
+11/5/2026,payment_processing,$493.45,192,Shopify Payments payouts,Shopify Payments payout report: 2.9% + $0.30 per charge
+11/6/2026,pick_pack,$710.45,209,3PL invoice,3PL rate card v2 (effective 2026-11-02): $2.85/order + $0.35 per additional unit
+11/6/2026,packaging,$114.95,209,3PL invoice,Gift-ready mailer $0.55/order (effective 2026-11-02)
+11/6/2026,shipping_labels,$896.44,209,Carrier invoice,"Carrier invoice, blended across zones; includes peak-season surcharge"
+11/6/2026,payment_processing,$583.62,209,Shopify Payments payouts,Shopify Payments payout report: 2.9% + $0.30 per charge
+11/7/2026,pick_pack,$748.00,225,3PL invoice,3PL rate card v2 (effective 2026-11-02): $2.85/order + $0.35 per additional unit
+11/7/2026,packaging,$123.75,225,3PL invoice,Gift-ready mailer $0.55/order (effective 2026-11-02)
+11/7/2026,shipping_labels,$965.06,225,Carrier invoice,"Carrier invoice, blended across zones; includes peak-season surcharge"
+11/7/2026,payment_processing,$576.92,225,Shopify Payments payouts,Shopify Payments payout report: 2.9% + $0.30 per charge
+11/8/2026,pick_pack,$747.50,215,3PL invoice,3PL rate card v2 (effective 2026-11-02): $2.85/order + $0.35 per additional unit
+11/8/2026,packaging,$118.25,215,3PL invoice,Gift-ready mailer $0.55/order (effective 2026-11-02)
+11/8/2026,shipping_labels,$922.20,215,Carrier invoice,"Carrier invoice, blended across zones; includes peak-season surcharge"
+11/8/2026,payment_processing,$617.95,215,Shopify Payments payouts,Shopify Payments payout report: 2.9% + $0.30 per charge

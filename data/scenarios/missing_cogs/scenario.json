@@ -1,0 +1,27 @@
+{
+  "name": "missing_cogs",
+  "title": "A new SKU has no product cost",
+  "question": "What was our contribution profit last week compared with the week before?",
+  "description": "NS-BTL-40 launched in the current week but is missing from the product-cost sheet.",
+  "expected": {
+    "missing_cost_sku": "NS-BTL-40",
+    "contribution_profit_complete": false
+  },
+  "periods": {
+    "current": {
+      "start": "2026-11-02",
+      "end": "2026-11-08"
+    },
+    "previous": {
+      "start": "2026-10-26",
+      "end": "2026-11-01"
+    }
+  },
+  "overrides": [
+    "google-sheets/fulfillment-costs.csv",
+    "shopify/order-items.csv",
+    "shopify/orders.csv",
+    "shopify/products.csv"
+  ],
+  "fictional": true
+}

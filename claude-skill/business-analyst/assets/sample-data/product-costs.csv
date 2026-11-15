@@ -1,0 +1,10 @@
+sku,product_name,unit_cost,effective_from,effective_to,notes
+NS-BAG-LUN,Basecamp Insulated Lunch Bag,18.5,2026-01-01,,Landed cost per unit
+NS-BRS-CLN,Bottle Brush Set,2.25,2026-01-01,,Landed cost per unit
+NS-BTL-20,Summit 20 oz Insulated Bottle,10.5,2026-01-01,,Landed cost per unit
+NS-BTL-32,Summit 32 oz Insulated Bottle,12.75,2026-01-01,2026-11-01,Landed cost per unit
+NS-BTL-32,Summit 32 oz Insulated Bottle,13.5,2026-11-02,,Supplier price increase (steel surcharge)
+NS-CUP-KID,Trailblazer 12 oz Kids Cup,8.75,2026-01-01,,Landed cost per unit
+NS-KIT-HIK,Trailhead Hiking Gift Kit,38.0,2026-01-01,,Landed cost per unit
+NS-LID-STR,Flip Straw Lid,3.25,2026-01-01,,Landed cost per unit
+NS-TUM-30,Commuter 30 oz Tumbler,10.25,2026-01-01,,Landed cost per unit

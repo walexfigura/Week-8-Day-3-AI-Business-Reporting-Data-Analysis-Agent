@@ -1,0 +1,28 @@
+{
+  "name": "duplicate_records",
+  "title": "Overlapping exports created duplicate rows",
+  "question": "Prepare the weekly business review for last week.",
+  "description": "30 duplicated orders (with their line items), 4 duplicated refunds, one duplicated Meta day.",
+  "expected": {
+    "duplicate_orders": 30,
+    "duplicate_refunds": 4,
+    "duplicate_ad_rows": 4
+  },
+  "periods": {
+    "current": {
+      "start": "2026-11-02",
+      "end": "2026-11-08"
+    },
+    "previous": {
+      "start": "2026-10-26",
+      "end": "2026-11-01"
+    }
+  },
+  "overrides": [
+    "meta/campaign-performance.csv",
+    "shopify/order-items.csv",
+    "shopify/orders.csv",
+    "shopify/refunds.csv"
+  ],
+  "fictional": true
+}

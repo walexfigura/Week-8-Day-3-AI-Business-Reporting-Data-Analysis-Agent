@@ -1,0 +1,9 @@
+product_id,sku,title,category,list_price,status
+8001,NS-BTL-20,Summit 20 oz Insulated Bottle,Bottles,32.00,active
+8002,NS-BTL-32,Summit 32 oz Insulated Bottle,Bottles,38.00,active
+8003,NS-TUM-30,Commuter 30 oz Tumbler,Drinkware,28.00,active
+8004,NS-CUP-KID,Trailblazer 12 oz Kids Cup,Drinkware,18.00,active
+8005,NS-BAG-LUN,Basecamp Insulated Lunch Bag,Bags,45.00,active
+8006,NS-KIT-HIK,Trailhead Hiking Gift Kit,Bundles,85.00,active
+8007,NS-LID-STR,Flip Straw Lid,Accessories,12.00,active
+8008,NS-BRS-CLN,Bottle Brush Set,Accessories,10.00,active

@@ -1,0 +1,10 @@
+metric,target_value,unit,direction,notes
+ad_spend_pct_of_net_sales,22.0,percent,max,FICTIONAL target for teaching. Meta spend / net product sales
+blended_mer,4.5,ratio,min,FICTIONAL target for teaching. Net product sales / Meta spend (Shopify-based)
+cogs_pct_of_net_sales,42.0,percent,max,FICTIONAL target for teaching. COGS / net product sales
+contribution_margin,25.0,percent,min,FICTIONAL target for teaching. Contribution profit / net product sales
+fees_per_order,6.5,usd,max,FICTIONAL target for teaching. (Fulfillment + payment fees) / orders
+meta_platform_roas,2.5,ratio,min,FICTIONAL target for teaching. Meta-reported purchase value / spend (attribution-based)
+net_sales_growth_wow,3.0,percent,min,FICTIONAL target for teaching. Week-over-week net product sales growth
+product_gross_margin,55.0,percent,min,FICTIONAL target for teaching. Per-SKU (net sales - COGS) / net sales
+refund_rate,4.0,percent,max,FICTIONAL target for teaching. Refunds / gross product sales

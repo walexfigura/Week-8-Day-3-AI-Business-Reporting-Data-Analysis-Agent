@@ -1,0 +1,23 @@
+{
+  "name": "attribution_gap",
+  "title": "Meta conversions do not reconcile with Shopify",
+  "question": "Meta says our ads drove more revenue than ever last week. Should we add that to our sales?",
+  "description": "Current-week Meta purchases and purchase value tripled; Shopify orders unchanged.",
+  "expected": {
+    "platform_value_exceeds_shopify_net_sales": true
+  },
+  "periods": {
+    "current": {
+      "start": "2026-11-02",
+      "end": "2026-11-08"
+    },
+    "previous": {
+      "start": "2026-10-26",
+      "end": "2026-11-01"
+    }
+  },
+  "overrides": [
+    "meta/campaign-performance.csv"
+  ],
+  "fictional": true
+}
