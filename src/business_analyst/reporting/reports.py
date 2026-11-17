@@ -132,9 +132,16 @@ def pct(v: Any, signed: bool = True) -> str:
     return f"{v:+.1f}%" if signed else f"{v:.1f}%"
 
 
+def _cell(c: Any) -> str:
+    """Escape a value for a Markdown table cell (pipes would split the cell; newlines end the row)."""
+    if c is None:
+        return ""
+    return str(c).replace("\\|", "|").replace("|", "\\|").replace("\r", " ").replace("\n", " ")
+
+
 def table(headers: list[str], rows: list[list[Any]]) -> str:
-    out = ["| " + " | ".join(headers) + " |", "|" + "|".join("---" for _ in headers) + "|"]
-    out += ["| " + " | ".join("" if c is None else str(c) for c in r) + " |" for r in rows]
+    out = ["| " + " | ".join(_cell(h) for h in headers) + " |", "|" + "|".join("---" for _ in headers) + "|"]
+    out += ["| " + " | ".join(_cell(c) for c in r) + " |" for r in rows]
     return "\n".join(out)
 
 
